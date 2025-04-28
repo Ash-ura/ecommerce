@@ -105,12 +105,6 @@ curl -u user:password http://localhost:8081/products
 - **OrderEntity**: `id`, `customer`, `total`, `List<Long> productIds`
 - **InsightMetrics**: `totalProducts`, `totalOrders`, `totalRevenue`, `averageOrderValue`
 
----
-
-### ⚙️ Caching
-
-- `GET /products` is cached via Caffeine (10 min expiry, max 100 entries).
-- Cache evicted on create/update/delete.
 
 ---
 
